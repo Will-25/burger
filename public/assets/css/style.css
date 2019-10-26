@@ -1,0 +1,49 @@
+body {
+    background-image: url("/assets/images/burger.png");
+    background-size: 13%;
+}
+
+h1 {
+    font-family: 'Fascinate Inline', cursive;
+   
+}
+
+.header {
+    font-size: 55px;
+    color: #DC143C;
+}
+
+.container {
+    background-color: #FFFF00;
+    height: 500px;
+    margin-top: 90px;
+    text-align: center;
+    padding: 10px;
+}
+
+.burgers {
+    
+    padding: 20px;
+   margin-top:20px;
+}
+
+.eaten {
+   
+    margin-top:20px;
+}
+
+
+.burgerText {
+    color:white;
+    font-size: 28px;
+    text-shadow:
+		-1px -1px 0 #000,
+		1px -1px 0 #000,
+		-1px 1px 0 #000,
+		1px 1px 0 #000;
+}
+
+#burgerInput {
+    width: 400px;
+    margin:auto;
+}
