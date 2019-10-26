@@ -7,10 +7,11 @@ $(document).ready(function () {
             name: $("#burgerInput").val(),
             devoured: false
         }
+        $.get("/")
 
 
         $.post("/", newBurger).then(function(data) {
-          
+         $(".burgers").text(data)
         })
       
     })
