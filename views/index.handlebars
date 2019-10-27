@@ -9,7 +9,16 @@
         <div class="col-md-6 burgerText">Burgers That Have Been Devoured:</div>
     </div>
     <div class="row">
-        <div class="col-lg-6 burgers"></div>
+        <div class="col-lg-6 burgers">
+            <ul>
+                {{#each burgers}}
+
+                    <div class="words">{{burger_name}}              <button type="button" class="btn btn2 btn-danger">Eat this burger</button>
+                    </div>
+                
+                {{/each}}
+            </ul>
+        </div>
         <div class="col-lg-6 eaten"></div>
     </div>
     <div class="row">
@@ -19,7 +28,7 @@
                     <label>Enter the Name of Your Borger Bellow!</label>
                     <textarea class="form-control" id="burgerInput" rows="5"></textarea>
                 </div>
-                <button type="submit" class="btn btn-primary mb-2 submitButton">Confirm identity</button>
+                <button type="submit" class="btn1 btn btn-primary mb-2">Confirm identity</button>
             </form>
         </div>
     </div>

@@ -1,18 +1,25 @@
 $(document).ready(function () {
    
 
-    $(".submitButton").on("click", function (event) {
-        event.preventDefault();
-        newBurger = {
-            name: $("#burgerInput").val(),
-            devoured: false
+    $(".btn1").on("click", function () {
+        var input = $("#burgerInput").val()
+        if(input === "") {
+            alert("name a burger!")
+        } else {
+            newBurger = {
+                name: input,
+                devoured: false
+            }
+            $("#burgerInput").val("")
+           
+    
+    
+            $.post("/", newBurger).then(function() {
+             
+            })
         }
-        $.get("/")
-
-
-        $.post("/", newBurger).then(function(data) {
-         $(".burgers").text(data)
-        })
+       
+        
       
     })
 
