@@ -11,13 +11,13 @@ var orm = {
         });
     },
 
-    updateOne: function (burgerName) {
-        var query = "UPDATE burgers SET devoured = true WHERE burger_name = ?";
-        connection.query(query, [burgerName], function (err) {
+    updateOne: function (vals, id, cb) {
+        
+        connection.query("UPDATE burgers SET devoured = ? WHERE id = ?", [vals, id], function (err, result) {
             if (err) {
                 throw err;
             }
-           
+           cb(result)
         })
         
     },

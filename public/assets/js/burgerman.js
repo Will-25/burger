@@ -23,17 +23,17 @@ $(document).ready(function () {
 
     })
 
-    $(".btn2").on("click", function () {
-        var borgor = {
-            burger_name: "Burger with Frick sauce"
+    $(".btn2").on("click", function (event) {
+        event.preventDefault();
+        var id = {
+            id: $(this).data("id")
         }
         $.ajax({
-            url: "/",
-            type: "POST",
-            data: borgor
-        }).then(function () {
+            url: '/',
+            type: 'PUT',
+            data: id
+        });
 
-        })
     })
 
 })

@@ -13,7 +13,7 @@
             <ul>
                 {{#each burgers}}
                     {{#unless devoured}}
-                    <div class="words">{{burger_name}}              <button type="button" class="btn btn2 btn-danger">Eat this burger</button>
+                    <div data-devour = "{{devour}}" class = "{{id}} words">{{burger_name}}              <button type="button" class="btn btn2 btn-danger" data-id = "{{id}}">Eat this burger</button>
                     </div>
                     {{/unless}}
                 {{/each}}
@@ -22,7 +22,7 @@
         <div class="col-lg-6 eaten">
             {{#each burgers}}
                 {{#if devoured}}
-               <div class="words">{{burger_name}} </div>
+               <div data-devour = "{{devour}}" class="words">{{burger_name}} </div>
                 {{/if}}
             {{/each}}
         </div>
