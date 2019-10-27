@@ -12,14 +12,20 @@
         <div class="col-lg-6 burgers">
             <ul>
                 {{#each burgers}}
-
+                    {{#unless devoured}}
                     <div class="words">{{burger_name}}              <button type="button" class="btn btn2 btn-danger">Eat this burger</button>
                     </div>
-                
+                    {{/unless}}
                 {{/each}}
             </ul>
         </div>
-        <div class="col-lg-6 eaten"></div>
+        <div class="col-lg-6 eaten">
+            {{#each burgers}}
+                {{#if devoured}}
+               <div class="words">{{burger_name}} </div>
+                {{/if}}
+            {{/each}}
+        </div>
     </div>
     <div class="row">
         <div class="col-lg-12">

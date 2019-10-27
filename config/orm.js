@@ -11,14 +11,15 @@ var orm = {
         });
     },
 
-    updateOne: function (tableInput, burgerName, cb) {
-        var query = "UPDATE ?? SET devoured = true WHERE burger_name = ?";
-        connection.query(query, [tableInput, burgerName], function (err, result) {
+    updateOne: function (burgerName) {
+        var query = "UPDATE burgers SET devoured = true WHERE burger_name = ?";
+        connection.query(query, [burgerName], function (err) {
             if (err) {
                 throw err;
             }
-            cb(result);
+           
         })
+        
     },
     insertOne: function (tableInput, burgerName, cb) {
         var query = "INSERT INTO ?? (burger_name, devoured) VALUES (?, false)";
@@ -26,7 +27,7 @@ var orm = {
             if (err) {
                 throw err;
             }
-            // cb(result);
+           
         });
     }
 

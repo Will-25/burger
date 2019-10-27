@@ -15,7 +15,7 @@ router.get("/", function (req, res) {
 })
 
 router.post("/", function (req, res) {
-    console.log(req.body)
+    
     burger.insert([req.body.name], ["burger_name"], function (result) {
         res.json({ id: result.insertId })
     })
@@ -23,10 +23,9 @@ router.post("/", function (req, res) {
 })
 
 router.put("/", function (req, res) {
-
-    burger.update({
-        devoured: req.body.devoured
-    })
+ 
+    burger.update
 })
+
 
 module.exports = router;
