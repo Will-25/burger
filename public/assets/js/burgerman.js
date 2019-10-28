@@ -24,7 +24,7 @@ $(document).ready(function () {
     })
 
     $(".btn2").on("click", function (event) {
-        event.preventDefault();
+        
         var id = {
             id: $(this).data("id")
         }
@@ -32,8 +32,10 @@ $(document).ready(function () {
             url: '/',
             type: 'PUT',
             data: id
+        }).then(function() {
+            
         });
-
+        location.reload();
     })
 
 })

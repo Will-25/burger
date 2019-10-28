@@ -23,12 +23,11 @@ router.post("/", function (req, res) {
 })
 
 router.put("/", function (req, res) {
- burger.update(
-     [req.body.devoured],
-     [req.body.id]
- , function() {
+    
+    burger.update(1,req.body.id, function() {
+        
+    });
 
- })
     
 })
 
