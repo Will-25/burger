@@ -5,10 +5,14 @@
 # Description
 
 
-*Eat the Burger* is an app that utilizes a dabatase so that a user is able to input a burger via text, and that burger will be added to a list of unneaten burgers. The user can then click a button to "eat" it, and will be added to a list on the right.
+*Eat the Burger* is an app that utilizes a dabatase so that a user is able to input a burger via text, and that burger will be added to a list of unneaten burgers. The user can then click a button to "eat" it, and will be added to a list on the right. It was made using Handlebars, MySQL, Sequalize ORM, and Javascript. 
 
 
 # Demo
+
+*Eat the Burger* is deployed on Heroku you can mess with it here: https://burger68.herokuapp.com/
+
+# Walkthrough
 
 *Eat the Burger* starts on the homepage, with a list of eaten and uneaten burgers (if there are any). You can type anything you want into the box
 
@@ -23,4 +27,3 @@ When the button attatched to the new burger is clicked, it then changes the "eat
 
 ![burger column](/public/assets/images/burger4.png)
 
-https://burger68.herokuapp.com/
