@@ -23,7 +23,7 @@ When you submit the burger, it is then moved to the "uneaten" column. This happe
 
 ![burger column](/public/assets/images/burger3.png)
 
-When the button attatched to the new burger is clicked, it then changes the "eaten" attribute to true, and as it cant be rendered in the "eaten" box anymore, it moves into the other column.
+When the button attatched to the new burger is clicked, it then changes the "eaten" attribute to true, and as it cant be rendered in the "uneaten" box anymore, it moves into the other column
 
 ![burger column](/public/assets/images/burger4.png)
 
