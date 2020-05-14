@@ -1,4 +1,5 @@
-Eat the Burger
+# Eat the Burger
+
 - This is an app where a user is able to input a burger via text, and that burger will be added to a list of unneaten burgers. The user can then click a button to "eat" it, and will be added to a list on the right.
 
 - What is actually happening when a user submits a burger is it gets submitted to a table in a database. When the page is reloaded, the data will be persistant.
